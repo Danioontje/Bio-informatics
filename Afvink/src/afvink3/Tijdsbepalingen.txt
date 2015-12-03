@@ -1,0 +1,31 @@
+Tijdsbepalingen
+
+Arraylist volledige genen lijst = 101 milliseconden
+Arraylist lijstx2 = 147
+Arraylist lijstx4 = 269
+Arraylist lijstx8 = 502
+Arraylist lijstx16 = 655
+
+is O(n)
+
+Geen idee welke big o nogal een rare verdeling de 8x keer grotere lijst duurt langer dan de 16x grotere lijst. 
+ik denk O(log N) met een beetje een kwadratisch begin
+linked list volledige genen lijst = 160 milliseconden
+linked list lijstX2 = 222 miliseconden
+linked listx4 = 354 miliseconden
+linkedlistX8 = 2015 
+Linked list x16 = 1919
+
+gen ophalen op index O(1)
+Arraylist volledige genen lijst = 0 milliseconden
+Arraylist lijstx2 = 0
+Arraylist lijstx4 = 0
+Arraylist lijstx8 = 0
+Arraylist lijstx16 = 0
+
+Gen ophalen op index (officieel moet dit volgens mij O(n) zijn maar bij mij is ie gewoon elke keer 0 dus O(1)
+Linkedlist volledige genen lijst = 0 milliseconden
+Linkedlist lijstx2 = 0
+Linkedlist lijstx4 = 0
+Linkedlist lijstx8 = 0
+Linkedlist lijstx16 = 0

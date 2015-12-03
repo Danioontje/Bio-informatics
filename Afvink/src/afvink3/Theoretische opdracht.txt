@@ -1,0 +1,26 @@
+Geef er stap aan hoe de stack eruitziet bij het uitvoeren van de volgende operaties - we beginnen met een lege stack
+push(5)
+stack = 5
+push(3)
+stack = 3 5
+pop()
+stack = 5
+push(2)
+stack = 2 5
+push(8)
+stack = 8 2 5
+pop()
+stack = 2 5
+pop()
+stack = 5
+push(9)
+stack = 9 5
+push(1)
+stack = 1 9 5
+
+Hoe kun je een stack gebruiken om te checken of de haakjes in een rekenkundige expressie goed zijn?
+haakjes moet je open en sluiten. De haakjes worden ddorgelopen. Een openend haakje wordt op de stack gelegd (push).
+De daaropvolgende open haakjes ook totdat er een gesloten haakje wordt gevonden. Als het gesloten haakje 
+gelijk is aan het openhaakje dan pop je het open haakje van de stack af. Dit wordt gedaan totdat de stack weer leeg is.
+
+
