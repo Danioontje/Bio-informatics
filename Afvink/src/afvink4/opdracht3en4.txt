@@ -1,0 +1,44 @@
+Opdracht 3
+Wat is de waarschijnlijkheid van ieder symbool?
+a: 12t: 14c: 18g: 13
+
+Construeer een huffman boom
+57
+	0	25
+			0	14t
+					0	12a
+					1	13g
+			1	18c
+	1	32
+
+codes voor ieder symbool?
+a = 000
+g = 001
+t = 00
+c = 01
+
+Dna sequentie is:
+"tatgcc aatgca tttttg cccgcatgaagcatgtagcgcgcatgcctacctgcacgc"
+
+binair is:
+000111000110000001111110010011001001111110011100110110111
+
+Is het huffman algoritme efficient om dna te comprimeren
+-57 bits voor huffman algoritme
+-456 voor niet huffman 
+dus ja wel enigszins efficient
+
+Ben je in staat om een efficienter algoritme op te stellen voor DNA compressie?
+uhm de dna code omzetten naar een eenlettercode aminozuur en dan hufmann toepassen (zal alleen efficienter zijn als die veel langer is denk ik)?
+
+Zou je verschillen kunnen ontdekken tussen coderende en niet coderende DNA sequenties in DNA met je efficiente algoritme?
+ja, beginnen met lezen bij methionine en eindigen op een stopcodon
+en die substring weer in het huffmann algo gooien
+
+Opdracht 4
+A) door alleen de belangrijke verschillen uit de referentie sequentie en de genoomsequentie te halen
+B) door gebruik te maken van de consensus sequence
+C) lossless, je hebt altijd de referce nog.
+D) ik heb geen idee
+
+
