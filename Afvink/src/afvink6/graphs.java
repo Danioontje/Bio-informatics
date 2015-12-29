@@ -23,7 +23,7 @@ public class graphs {
 
     private String fastaHeader;
     private String sequence;
-    //private ArrayList<String> data = new ArrayList<>();
+  
     private Map<String, String> data = new HashMap<String, String>();
 
     public void readFile() {
@@ -34,19 +34,13 @@ public class graphs {
             while (line != null) {
                 if (line.contains(">")) {
                     fastaHeader = line;
-                    //System.out.println(fastaHeader);
                     line = reader.readLine();
-
                 } else {
-                    sequence = line;
-                    //System.out.println(sequence);
+                    sequence = line; 
                     data.put(sequence, fastaHeader);
                     line = reader.readLine();
                 }
-
-            }
-            //System.out.println(data);
-
+            }            
         } catch (FileNotFoundException exception) {
             JOptionPane.showMessageDialog(null, exception);
 
@@ -60,21 +54,14 @@ public class graphs {
         for (int i = 0; i < listSeq.size(); i++) {
             String seq = listSeq.get(i);
             String first = seq.substring(0, 3);
-            String last = seq.substring(seq.length() - 3);
-            //System.out.println(seq);
-            //System.out.println(last);
-            //System.out.println(first); 
+            String last = seq.substring(seq.length() - 3);          
             for (int j = 0; j < listSeq.size(); j++) {
-                String test = listSeq.get(j);
-                //System.out.println(test);
+                String test = listSeq.get(j);               
                 if (first.equals(test.substring(test.length() - 3))) {
                     if (data.get(seq).equals(data.get(test)) == false) {
                         System.out.println(data.get(seq) + " : " + data.get(test));
                     }
-                }
-
-                
-
+                }             
             }
         }
     }
